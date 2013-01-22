@@ -19,4 +19,4 @@ sudo wget http://craigerrington.com/chrome/x_alarm_chrubuntu.zip
 sudo unzip x_alarm_chrubuntu.zip
 sudo rm x_alarm_chrubuntu.zip
 #Change the keyboard layout
-sudo cat 10-keyboard.conf | grep 'gb' | sed -e 's/gb/us/g'
+sudo sed -i 's/gb/us/g' 10-keyboard.conf
