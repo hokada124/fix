@@ -11,12 +11,13 @@
 
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ZIPFILE=xorg_conf.zip
 
 mkdir ~/backup
 sudo mv /usr/share/X11/xorg.conf.d/* ~/backup/
 cd /usr/share/X11/xorg.conf.d/
-sudo wget http://craigerrington.com/chrome/x_alarm_chrubuntu.zip
-sudo unzip x_alarm_chrubuntu.zip
-sudo rm x_alarm_chrubuntu.zip
+sudo wget http://jbdatko.files.wordpress.com/2013/07/$ZIPFILE
+sudo unzip $ZIPFILE
+sudo rm $ZIPFILE
 #Change the keyboard layout
 sudo sed -i 's/gb/us/g' 10-keyboard.conf
